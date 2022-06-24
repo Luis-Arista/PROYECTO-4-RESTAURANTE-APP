@@ -1,10 +1,12 @@
  
  .formulario-container{
     max-width: 96rem;
+    height: 484px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
  }
  
  .formulario{
@@ -40,4 +42,21 @@
    background-color: black;
    color: white;
    font-weight: bolder;
+   cursor: pointer;
+   border: 1px solid black;
+}
+
+.mensaje-formulario-eventos{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 758px) {
+    .formulario-container{
+        height: 350px;
+       
+     }
 }

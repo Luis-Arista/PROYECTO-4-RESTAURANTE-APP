@@ -1,5 +1,6 @@
 header{
-    background-color: rgb(29, 28, 28);
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px black;
 }
 
 nav{
@@ -22,15 +23,75 @@ nav{
     width: 150px;
 }
 
+.menu{
+    padding: 0 10px;
+}
+
 .activo{
-    color: white;
+    color: black;
     padding: 15px 20px ;
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(235, 235, 235) ;
 }
 
 .inactivo{
-    color: white;
+    color: black;
     padding: 15px 20px ;
     text-decoration: none;
 }
 
+.menu_boton{
+    display: none;
+}
+
+
+
+@media ( max-width: 758px ){
+    .menu{
+        display: none;
+    }
+
+    .menu_boton{
+        padding: 0 15px;
+        display: block;
+    }
+
+    .menu_boton_boton{
+        background-color: white;
+        color: black;
+        border: none;
+    }
+
+    .menu_boton_boton svg{
+         width: 40px;
+         height: auto;
+    }
+
+    .menu_responsive{
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .menu_responsive_option{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .activo_responsive{
+        color: black;
+        padding: 15px 20px ;
+        background-color: rgb(235, 235, 235) ;
+        width: 80%;
+    }
+    .inactivo_responsive{
+        color: black;
+        padding: 15px 20px ;
+        text-decoration: none;
+        width: 80%;
+    }
+}
